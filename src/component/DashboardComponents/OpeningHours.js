@@ -7,7 +7,7 @@ class OpeningHours extends Component{
  		list:[]
  }
 componentDidMount=async()=>{
-  const api_call = await fetch('http://www.getpostman.com/collections/aaedf5d90a04b24a2e7b');
+  const api_call = await fetch('https://www.getpostman.com/collections/aaedf5d90a04b24a2e7b');
   const response = await api_call.json();
   const A=response.requests[0].responses[0].text
   var B=JSON.parse( A.substring(1,85)) //returns "exce"
