@@ -32,7 +32,7 @@ class Login extends  Component{
       }
    
     console.log("Login", Login);
-       axios.post('http://testapi.halanx.com/rest-auth/login/', {...Login}) 
+       axios.post('https://testapi.halanx.com/rest-auth/login/', {...Login}) 
     
      .then(res => {
         console.log(res);
